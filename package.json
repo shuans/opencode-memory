@@ -1,5 +1,5 @@
 {
-  "name": "@knikolov/opencode-plugin-simple-memory",
+  "name": "opencode-memory",
   "module": "index.ts",
   "version": "1.0.2",
   "author": "knikolov",
