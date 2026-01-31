@@ -1,8 +1,8 @@
 {
   "name": "opencode-memory",
   "module": "index.ts",
-  "version": "1.0.0",
-  "author": "knikolov",
+  "version": "1.0.3",
+  "author": "tomako",
   "repository": "https://github.com/shuans/opencode-memory",
   "files": [
     "index.ts",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@opencode-ai/plugin": "^1.0.153",
+    "@opencode-ai/plugin": "^1.1.47",
     "@types/bun": "latest"
   },
   "peerDependencies": {
