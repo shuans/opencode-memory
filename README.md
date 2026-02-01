@@ -12,7 +12,7 @@ A persistent memory plugin for [OpenCode](https://opencode.ai) that enables the 
    ```json
    {
      "$schema": "https://opencode.ai/config.json",
-     "plugin": ["opencoce-memory"]
+     "plugin": ["opencode-memory"]
    }
    ```
 
@@ -29,7 +29,7 @@ To get the latest version, clear the cached plugin and let OpenCode reinstall it
 
 ```bash
 # Remove the plugin from cache
-rm -rf ~/.cache/opencode/node_modules/opencoce-memory
+rm -rf ~/.cache/opencode/node_modules/opencode-memory
 
 # Run OpenCode to trigger reinstall
 opencode
@@ -101,8 +101,8 @@ AI: [calls memory_forget with type="preference", scope="user",
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/shuans/opencoce-memory.git
-cd opencode-plugin-simple-memory
+git clone https://github.com/shuans/opencode-memory.git
+cd opencode-memory
 bun install
 ```
 
@@ -111,8 +111,8 @@ Point your OpenCode config to the local checkout via a `file://` URL:
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["file:///absolute/path/to/opencoce-memory"]
+  "plugin": ["file:///absolute/path/to/opencode-memory"]
 }
 ```
 
-Replace `/absolute/path/to/opencoce-memory` with your actual path.
+Replace `/absolute/path/to/opencode-memory` with your actual path.
