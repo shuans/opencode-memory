@@ -5,6 +5,9 @@
 
 A persistent memory plugin for [OpenCode](https://opencode.ai) that enables the AI assistant to remember context across sessions.
 
+> [!IMPORTANT]
+> Version 2.x targets the OpenCode v2 plugin system (`@opencode/plugin`). For OpenCode v1, use the 1.x release.
+
 ## Setup
 
 1. Add the plugin to your [OpenCode config](https://opencode.ai/docs/config/):
@@ -12,7 +15,7 @@ A persistent memory plugin for [OpenCode](https://opencode.ai) that enables the 
    ```json
    {
      "$schema": "https://opencode.ai/config.json",
-     "plugin": ["opencode-memory"]
+     "plugins": ["opencode-memory"]
    }
    ```
 
@@ -106,13 +109,11 @@ cd opencode-memory
 bun install
 ```
 
-Point your OpenCode config to the local checkout via a `file://` URL:
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": ["file:///absolute/path/to/opencode-memory"]
-}
-```
+Point your OpenCode config to the local checkout via a `file://` URL:   ```json
+   {
+     "$schema": "https://opencode.ai/config.json",
+     "plugins": ["file:///absolute/path/to/opencode-memory"]
+   }
+   ```
 
 Replace `/absolute/path/to/opencode-memory` with your actual path.
